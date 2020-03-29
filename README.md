@@ -1,2 +1,2 @@
 # React-Projs
-React applications for college
+React mobile application for college
