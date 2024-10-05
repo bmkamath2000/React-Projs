@@ -63,6 +63,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
+### Adding the snapshot
+![image](https://github.com/user-attachments/assets/76894a01-6bf8-4ca5-a6fb-62cce53c3735)
+
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
