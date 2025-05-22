@@ -14,9 +14,9 @@ If you are developing a production application, we recommend using TypeScript wi
 **ISSUE TRACKER(Proj9)**
 Commands to run:
 
-cd proj9
-npm install
-npm run dev
+cd proj9<br>
+npm install<br>
+npm run dev<br>
 
 Snapshot:
 ![Screenshot 2025-05-22 143626](https://github.com/user-attachments/assets/979d3510-ad71-47e2-b73a-ef0e27025ce4)
