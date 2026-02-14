@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Superhero AR</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-aframe.prod.js"></script>
+  </head>
+  <body>
+    <script>
+  window.onload = function() {
+    const sceneEl = document.querySelector('a-scene');
+    const superheroModel = document.querySelector('#superhero-model');
+    
+    sceneEl.addEventListener('click', function(event) {
+      // Trigger an animation or action on the model
+      superheroModel.setAttribute('animation-mixer', {clip: 'superhero_action_animation'});
+    });
+  };
+</script>
+    <a-scene
+    mindar-face
+    embedded
+    color-space="sRGB"
+    renderer="colorManagement: true, physicallyCorrectLights"
+    vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false"
+  >
+  <a-camera active="false" position="0 0 0"></a-camera>
+  <a-entity mindar-face-target="anchorIndex: 1">
+    <a-gltf-model
+      id="superhero-model"
+      animation-mixer
+      rotation="0 180 0"
+      position="0 -0.5 0"
+      scale="1 1 1"
+      src="shiba.glb"
+    ></a-gltf-model>
+  </a-entity>
+</a-scene>
+
+  </body>
+</html>
