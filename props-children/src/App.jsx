@@ -2,12 +2,9 @@ import Card from './components/Card'
 import './App.css'
 
 function App() {
-
-
   return (
     <>
-      <Card children="A Very good Web Dev Course">
-        
+      <Card property1="A Very good Web Dev Course">  
       </Card>
     </>
   )

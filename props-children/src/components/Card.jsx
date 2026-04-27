@@ -1,10 +1,8 @@
-
-
-
+import ChildComponent from './ChildComponent.jsx';
 const Card=(props)=>{
     return (
         <div>
-            <h1>{props.children}</h1>
+            <ChildComponent {...props}/>
         </div>
     )
 }
