@@ -6,18 +6,25 @@ function IssueFilter(){
         <h6>This is placeholder for Issue filter</h6>
     );
 }
+const sampleIssue={
+    status: 'new', owner:'pieta',
+    title:'completion date should be optional'
+};
 class IssueList extends React.Component{
     
     constructor(props){
         super(props);
         this.state={issues:[]}
         this.createIssue = this.createIssue.bind(this);
+        setTimeout(()=>{
+            this.createIssue(sampleIssue);
+        },5000);
     }
     componentDidMount(){
         this.LoadData();
     }
     LoadData(){
-        let initialIssues=[];
+        let initialIssues=[{id: 1,status:"new",created:new Date(), title:"new issue"}];
         setTimeout(()=>{
             this.setState({issues:initialIssues})
         },1000);

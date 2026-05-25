@@ -4,7 +4,7 @@ function Child(props){
     return(
         <div>
             <h1>Child Component</h1>
-            <button onClick={()=>props.func({greet})}>Greet Parent</button>
+            <button onClick={()=>{props.func(greet)}}>Great Parent</button>
         </div>
     )
 }

@@ -1,0 +1,22 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.18.1"
+  },
+  "devDependencies": {
+    "lodash-es": "^4.18.1",
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2"
+  }
+}
