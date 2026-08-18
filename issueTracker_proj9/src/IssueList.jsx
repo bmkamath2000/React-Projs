@@ -39,7 +39,7 @@ class IssueList extends React.Component{
     render(){
         return (
         <React.Fragment>
-            <h1>Issue Tracker</h1>
+            <h1>Issue Tracker - CI-CD</h1>
             <IssueFilter/>
             <hr/>
             <IssueTable issues={this.state.issues}/>
